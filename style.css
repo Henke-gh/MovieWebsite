@@ -85,6 +85,7 @@ h2 {
 .heroThumb,
 .heroImage,
 .heroArrowRight,
+.heroArrowLeft,
 .heroTextBox {
   width: 100%;
   position: absolute;
@@ -97,6 +98,12 @@ h2 {
   width: 32px;
   margin-top: 18%;
   left: 94%;
+}
+
+.heroArrowLeft {
+  width: 32px;
+  margin-top: 18%;
+  left: 6%;
 }
 
 .heroThumb {
