@@ -1,14 +1,15 @@
 let slideIndex = 1;
-showSlides(slideIndex);
+showSlides(slideIndex, "mySlides");
+showSlides(slideIndex, "heroSlides");
 
 // Next/previous controls
-function plusSlides(n) {
-  showSlides((slideIndex += n));
+function plusSlides(n, className) {
+  showSlides((slideIndex += n), className);
 }
 
-function showSlides(n) {
+function showSlides(n, className) {
   let i;
-  let slides = document.getElementsByClassName("mySlides");
+  let slides = document.getElementsByClassName(className);
   if (n > slides.length) {
     slideIndex = 1;
   }

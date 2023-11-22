@@ -75,18 +75,28 @@ h2 {
 
 .heroImage {
   max-width: 100%;
+}
+
+.heroFrontpage {
   mix-blend-mode: luminosity;
   filter: blur(2px);
 }
 
 .heroThumb,
 .heroImage,
+.heroArrowRight,
 .heroTextBox {
   width: 100%;
   position: absolute;
   height: auto;
   top: 0;
   left: 0;
+}
+
+.heroArrowRight {
+  width: 32px;
+  margin-top: 18%;
+  left: 94%;
 }
 
 .heroThumb {
@@ -117,6 +127,10 @@ h2 {
 
 .btn:hover {
   cursor: pointer;
+}
+
+.readMoreForm {
+  width: 9em;
 }
 
 .threeMoviePosters {
@@ -230,7 +244,9 @@ h2 {
   width: 100%;
 }
 
-/* ----------------Carousel control------------- */
+/* ----------------Slides control for Hero slide------------- */
+
+/* ----------------Slides control for bottom slide------------- */
 
 .newSlideContainer {
   display: flex;
