@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Godfather of Cinemas</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
     <link rel="icon" type="image/png" href="images/mafia_fav.png" />
   </head>
   <body>
@@ -17,9 +22,26 @@
           <a class="navLink" href="godfather.html">Movies</a>
           <a class="navLink" href="#">Log in</a>
         </div>
-        <input type="search" class="searchBar" placeholder="Search" />
+        <input type="search" class="searchBar-desktop" placeholder="Search" />
       </nav>
+      <!-- Navbar Mobile -->
+      <div class="header">
+        <label class="hamburger-menu">
+          <input type="checkbox" />
+        </label>
+
+        <aside class="sidebar">
+          <nav>
+            <div href="index.html">Home</div>
+            <div href="#">Tickets</div>
+            <div href="godfather.html">Movies</div>
+            <div href="#">Log in</div>
+          </nav>
+        </aside>
+        <input type="search" class="searchBar-mobile" placeholder="Search" />
+      </div>
     </header>
+
     <div class="heroContainer">
       <img class="heroImage heroFrontpage" src="images/hero.png" />
       <img class="heroThumb" src="images/The Godfather_heroThumb.png" />
