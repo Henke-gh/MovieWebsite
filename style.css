@@ -446,4 +446,22 @@ h2 {
     display: flex;
     flex-direction: column;
   }
+
+  .heroContainer {
+    width: 100vw;
+  }
+
+  .heroImage {
+    max-width: 100%;
+  }
+  .heroThumb {
+    display: block;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .actorContainer {
+    overflow: hidden;
+  }
 }
