@@ -77,6 +77,11 @@ h2 {
   max-width: 100%;
 }
 
+/*.heroFrontpage {
+  mix-blend-mode: luminosity;
+  filter: blur(2px);
+}*/
+
 .heroThumb,
 .heroImage,
 .heroArrowRight,
@@ -444,6 +449,8 @@ h2 {
 
   .heroContainer {
     width: 100vw;
+    height: auto;
+    position: relative;
   }
 
   .heroImage {
@@ -453,10 +460,26 @@ h2 {
     display: block;
     max-width: 200px;
     height: auto;
-    margin-bottom: 1rem;
+  }
+  .heroTextBox {
+    font-size: 10px;
+    max-width: 100px;
   }
 
   .actorContainer {
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 0.8rem;
+  }
+
+  .newsletter {
+    width: 80%;
   }
 }
