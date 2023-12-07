@@ -19,33 +19,6 @@
     ></script>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.css"
-      integrity="sha512-ShLuspGzRsTiMlQ2Rg0e+atjy/gVQr3oYKnKmQkHQ6sxcnDAEOtOaPz2rRmeygV2CtnwUawDyHkGgH4zUbP3Hw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.min.css"
-      integrity="sha512-YQlbvfX5C6Ym6fTUSZ9GZpyB3F92hmQAZTO5YjciedwAaGRI9ccNs4iw2QTCJiSPheUQZomZKHQtuwbHkA9lgw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.theme.css"
-      integrity="sha512-Cn5/xnOLSKjVpNCsJZCtgQhxp00FcFnlRwgbSG7WGFq1BVvyG+LoOarjXAq//8Vstyu0Na9wvEKLWR67/wAy3w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.theme.min.css"
-      integrity="sha512-wCwx+DYp8LDIaTem/rpXubV/C1WiNRsEVqoztV0NZm8tiTvsUeSlA/Uz02VTGSiqfzAHD4RnqVoevMcRZgYEcQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
     <link rel="icon" type="image/png" href="images/mafia_fav.png" />
   </head>
   <body>
@@ -89,10 +62,8 @@
       </div>
     </div>
     <main>
-      <h2>
-        Pre-purchase 2 tickets for any unreleased movie and get one ticket for
-        free!
-      </h2>
+
+      <h2>Pre-purchase 2 tickets for any unreleased movie and get one ticket for free!</h2>
 
       <div class="threeMoviePosters">
         <div class="moviePosterDiv">
@@ -104,6 +75,20 @@
         <div class="moviePosterDiv">
           <img class="moviePoster" src="images/scarface.png" />
         </div>
+      </div>
+
+      <div class="mobileSlideContainer">
+        <a class="previous arrow mobileArrow" onclick="plusSlides(-1, 'mySlides')">&#10094;</a>
+        <div class="mySlides fade">
+          <img class="bottomSlideImage" src="/images/godfather_pt2.png" />
+        </div>
+        <div class="mySlides fade">
+          <img class="bottomSlideImage" src="images/godfather_pt3.png" />
+        </div>
+        <div class="mySlides fade">
+          <img class="bottomSlideImage" src="/images/scarface.png" />
+        </div>
+        <a class="next arrow mobileArrow" onclick="plusSlides(1, 'mySlides')">&#10095;</a>
       </div>
 
       <div class="newsletter">
@@ -166,5 +151,6 @@
         </div>
       </footer>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
