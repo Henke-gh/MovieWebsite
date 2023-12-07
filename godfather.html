@@ -17,11 +17,29 @@
           <a class="navLink" href="godfather.html">Movies</a>
           <a class="navLink" href="#">Log in</a>
         </div>
-        <input type="search" class="searchBar" placeholder="Search" />
+        <input type="search" class="searchBar-desktop" placeholder="Search" />
       </nav>
+            <!-- Navbar Mobile -->
+            <div class="header">
+              <label class="hamburger-menu">
+                <input type="checkbox" />
+              </label>
+      
+              <aside class="sidebar">
+                <nav>
+                  <a href="index.html">Home</a>
+                  <a href="#">Tickets</a>
+                  <a href="godfather.html">Movies</a>
+                  <a href="#">Log in</a>
+                </nav>
+              </aside>
+              <input type="search" class="searchBar-mobile" placeholder="Search" />
+            </div>
+          </header>
+      
     </header>
     <div class="heroContainer heroSlides">
-      <img class="heroImage" src="images/hero.png" />
+      <img class="heroImage" src="images/heroSlide3.png" />
       <img class="heroArrowRight" src="images/arrow_right.png" onclick="plusSlides(1, 'heroSlides')" />
       <div class="heroTextBox">
         <h1>The Godfather</h1>
@@ -34,7 +52,7 @@
       <img class="heroArrowRight" src="images/arrow_right.png" onclick="plusSlides(1, 'heroSlides')" />
     </div>
     <div class="heroContainer heroSlides">
-      <img class="heroImage" src="images/heroSlide3.png" />
+      <img class="heroImage" src="images/hero.png" />
       <img class="heroArrowLeft" src="images/arrow_left.png" onclick="plusSlides(-1, 'heroSlides')" />
       <img class="heroArrowRight" src="images/arrow_right.png" onclick="plusSlides(1, 'heroSlides')" />
     </div>
@@ -46,7 +64,6 @@
 
     <main>
       <div class="aboutMovieContainer">
-        <img class="largePoster" src="images/The Godfather 1.png" />
         <div class="aboutTextDiv">
           <h1>The Godfather</h1>
           <p>
@@ -67,6 +84,8 @@
             Italian-American mafia, becoming an iconic and influential piece in cinematic history, setting the standard
             for many subsequent crime dramas.
           </p>
+          <img class="largePoster" src="images/The Godfather 1.png" />
+
         </div>
       </div>
 
@@ -88,12 +107,12 @@
 
       <div class="dividerLine"></div>
 
-      <footer>
-        <nav>
-          <a class="navLink" href="#">Contact Us</a>
+      <footer class="footerContainer">
+        <div class="grid-container">
           <a class="navLink" href="#">Log in</a>
           <a class="navLink" href="#">About</a>
-        </nav>
+          <a class="navLink" href="#">Contact Us</a>
+        </div>
         <div class="contactInfo">
           <p>Lärdomsgatan 3</p>
           <p>Yrgo@yrgo.se</p>
