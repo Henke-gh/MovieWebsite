@@ -22,6 +22,9 @@ function showSlides(n, className) {
   slides[slideIndex - 1].style.display = "block";
 }
 
+handleClassChange();
+window.addEventListener("resize", handleClassChange);
+
 var burgerMenu = document.getElementById("burger-menu");
 
 var overlay = document.getElementById("menu");
