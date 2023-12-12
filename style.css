@@ -1,23 +1,57 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500;6..96,700&display=swap");
 
 :root {
   --white: #ffffff;
-  --red: #ae4e4e;
+  --darkRed: #ae4e4e;
+  --darkRed: #772525;
   --lightgrey: #d9d9d9;
   --black: #110707;
   --inter: "Inter", sans-serif;
+  --BodoniModa: "Bodoni Moda", serif;
+}
+
+header {
+  background-color: var(--darkRed);
+}
+
+header .headerLogo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.headerLogo h1 {
+  font-family: var(--BodoniModa);
+  color: var(--lightgrey);
+  font-size: 4em;
+  margin-left: 10%;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+.linkContainer .links a {
+  width: 100px;
+}
+
+.linkContainer .links .searchBar-desktop {
+  margin-left: 20%;
+}
+
+.logoLinks {
+  margin-left: 5%;
 }
 
 body {
   height: 100vh;
   margin: 0;
-  background-color: var(--red);
+  background-color: var(--darkRed);
   font-family: var(--inter);
   color: var(--white);
 }
 
 main {
-  background: linear-gradient(to bottom, #ae4e4e, #110707);
+  background: linear-gradient(to bottom, #772525, #110707);
 }
 
 nav {
@@ -26,7 +60,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding-top: 1%;
-  padding-left: 10%;
+  padding-left: 5%;
   padding-right: 10%;
   padding-bottom: 1%;
 }
@@ -109,7 +143,7 @@ h2 {
 .heroArrowLeft {
   width: 32px;
   margin-top: 18%;
-  left: 6%;
+  left: 4%;
 }
 
 .heroThumb {
@@ -128,7 +162,7 @@ h2 {
 }
 
 .btn {
-  background-color: var(--red);
+  background-color: var(--darkRed);
   border: none;
   border-radius: 20px;
   padding: 2.5% 10% 2.5% 10%;
@@ -211,7 +245,7 @@ h2 {
   padding: 1% 1% 4% 1%;
   margin-bottom: 10%;
   border-radius: 15px;
-  background-color: var(--red);
+  background-color: var(--darkRed);
 }
 
 .actorPortrait {
@@ -227,7 +261,7 @@ h2 {
   width: 100%;
   height: 2px;
   margin-bottom: 3%;
-  background-color: var(--red);
+  background-color: var(--darkRed);
 }
 
 .grid-container {
@@ -350,9 +384,12 @@ h2 {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     margin: 0 auto;
-    width: 70%;
-    height: auto;
+  }
+
+  .mobileSlideContainer .bottomSlideImage {
+    height: 400px;
   }
 
   .mySlides {
@@ -579,5 +616,11 @@ h2 {
   .contactInfo > p {
     height: auto;
     font-weight: lighter;
+  }
+
+  .heroArrowRight {
+    width: 32px;
+    margin-top: 18%;
+    left: 90%;
   }
 }
