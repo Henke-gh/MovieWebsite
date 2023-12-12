@@ -373,7 +373,7 @@ h2 {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 790px) {
   .hidden {
     visibility: visible;
   }
@@ -639,5 +639,11 @@ h2 {
   }
   .actorDiv {
     width: 80%;
+  }
+
+  .linkContainer .links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
